@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./index.js" defer></script>
+    <title>ToDo List</title>
+</head>
+<body onresize="contentaligner(); contentaligns()">
+    <div class="bluruse" id="blur">
+        <div id="container" class="cont">
+            <h1 class="header">My Todo List</h1>
+            <div id="differ">
+                <div id="sidebar">
+                    <div id="aligner">
+                        <div id="sidebarfirst">
+                            <h2>My Tasks</h2>
+                            <form id="formee">
+                                <input type="text" id="titler" placeholder="Name of the tasks">
+                            </form>
+                            <div id="hold">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="maincontent">
+                    <div id="taskheader">
+                        <h2 id="heee">Nothing To-Do</h2>
+                    </div>
+                    <div class="taskalign">
+                        <a href="#" id="addtask">+</a>
+                    </div>
+                    <div id="tasker">
+                        <div id="sectasker">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="formeer" id="formeraligner">
+        <form id="popupform" onsubmit="event.preventDefault()">
+            <div class="popupcloseralign">
+                <button id="closepopup">X</button>
+            </div>
+            <div class="formaligner">
+                <div class="titleal">
+                    <label for="titletext" class="titlelabel">Title</label>
+                    <input type="text" id="titletext" class="enterform" onkeydown="return (event.keyCode!=13);">
+                </div>
+                <div class="duedeal">
+                    <label for="duedate" class="duedatelabel">Due Date</label>
+                    <input type="date" id="duedate" class="enterform" onkeydown="return (event.keyCode!=13);">
+                </div>
+                <div class="prireal">
+                    <label for="priority" class="prioritylabel">Priority</label>
+                    <select id="priority" class="enterform" onkeydown="return (event.keyCode!=13);">
+                        <option>Low</option>
+                        <option>Medium</option>
+                        <option>High</option>
+                    </select>
+                </div>
+                <div class="disreal">
+                    <label for="description" class="descriptionlabel">Description</label>
+                    <textarea id="description"></textarea>
+                </div>
+                <div class="subreal">
+                    <input type="button" id="submitpopup" value="Add Task">
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
