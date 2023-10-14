@@ -1,0 +1,448 @@
+html, body, div, span, applet, object, iframe, p, blockquote, pre,
+ abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+html{
+    height: 100%;
+}
+
+body{
+    height: 100%;
+    background-color: darkgray;
+}
+
+#blur{
+    height: 100%;
+}
+
+.bluruse#blur.active{
+    filter: blur(20px);
+    pointer-events: none;
+    user-select: none;
+}
+
+.header{
+    text-align: center;
+    background-color: rgb(77, 75, 75);
+    margin: 0;
+    padding: 0.5em;
+    color: white;
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    height: 100%;
+}
+
+#differ{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+#sidebar{
+    background-color: darkgray;
+    border-radius: 2px;
+    width: 17%;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.projectholder{
+    padding-bottom: 1em;
+}
+
+#aligner{
+    flex: 1;
+    background-color: white;
+}
+
+#sidebarfirst{
+    padding-bottom: 0.5em;
+    padding-left: 1em;
+    background-color: white;
+}
+
+.sidearranger{
+    display: flex;
+    padding-right: 1em;
+}
+
+.firsttitler{
+    font-size: large;
+}
+
+#titler{
+    height: 1em;
+    border-radius: 35px;
+    background-color: gray;
+    color: black;
+    width: 100%;
+}
+
+#titler::placeholder{
+    color: black;
+}
+
+#addpro{
+    font-size: large;
+    border: 3px solid black;
+    border-radius: 15px;
+    color: black;
+    cursor: pointer;
+}
+
+#formee{
+    opacity: 1;
+    padding-bottom: 1em;
+    display: flex;
+    padding-right: 1em;
+}
+
+.projectholder{
+    display: flex;
+    padding-right: 1em;
+    padding-bottom: 1em;
+}
+
+#deletetasker{
+    display: flex;
+    padding-right: 1em;
+}
+
+.indicatorbutt{
+    font-size: medium;
+    border-radius: 20px;
+    flex: 1;
+    height: 2.2em;
+    background-color: lightgray;
+    overflow: hidden;
+    border: 2px solid black;
+}
+
+.indicatorbutt:hover{
+    background-color:dodgerblue;
+    transition: 0.4s;
+}
+
+#titler{
+    font-size: large;
+    height: 1.5em;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+#maincontent{
+    width: 83%;
+    display: flex;
+    flex-direction: column;
+    background-color: darkgray;
+    border-left: 0px;
+    color: black;
+    min-height: 100%;
+    border-left: 5px solid rgb(77, 75, 75);
+    border-right: 5px solid rgb(77, 75, 75);
+}
+
+#mainheader{
+    padding-left: 0.5em;
+}
+
+#heee{
+    padding-left: 1em;
+    color: black;
+}
+
+#mainheader{
+    padding-left: 1em;
+}
+
+.removerhelp{
+    padding-left: 1em;
+    color: black;
+}
+
+.taskalign{
+    padding-left: 2em;
+}
+
+a{
+    text-decoration: none;
+    display: block;
+}
+
+a:-webkit-any-link{
+    color: black;
+}
+
+#addtask{
+    font-size: xx-large;
+    font-weight: bolder;
+    width: 1em;
+    cursor: pointer;
+    border-radius: 30px;
+    background-color: white;
+    border: 2px solid black;
+    text-align: center;
+    visibility: hidden;
+}
+
+#addtask:hover{
+    background-color: lightgray;
+}
+
+/* popup form */
+
+.formeer#formeraligner{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    background-color: white;
+    transform: translate(-50%, -50%);
+}
+
+#popupform{
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    width: 350px;
+    border: 2px solid black;
+    padding: 1em;
+    gap: 1em;
+    background-color: whitesmoke;
+}
+
+.popupcloseralign{
+    align-self: end;
+}
+
+.titleal{
+    display: flex;
+    flex-direction: column;
+    gap: 0.8em;
+    padding-bottom: 1em;
+}
+
+.titlelabel{
+    font-size: large;
+    font-weight: bold;
+}
+
+#titletext{
+    border-radius: 10px;
+    height: 2em;
+}
+
+.duedeal{
+    display: flex;
+    flex-direction: column;
+    gap: 0.8em;
+    padding-bottom: 1em;
+}
+
+.duedatelabel{
+    font-size: large;
+    font-weight: bold;
+}
+
+#duedate{
+    border-radius: 10px;
+    height: 2em;
+}
+
+.prireal{
+    display: flex;
+    flex-direction: column;
+    gap: 0.8em;
+    padding-bottom: 1em;
+}
+
+.prioritylabel{
+    font-size: large;
+    font-weight: bold;
+}
+
+#priority{
+    border-radius: 10px;
+    height: 2.4em;
+}
+
+.disreal{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding-bottom: 1em;
+}
+
+.descriptionlabel{
+    font-size: large;
+    font-weight: bold;
+}
+
+#description{
+    border-radius: 10px;
+    font-size: medium;
+    height: 7em;
+    font-size: large;
+    padding: 0.3em;
+}
+
+#submitpopup{
+    font-size: medium;
+    border-radius: 10px;
+    height: 2em;
+    width: 5em;
+}
+
+#tasker{
+    display: flex;
+    flex-direction: column;
+}
+
+#minicont{
+    display: flex;
+    flex-direction: row;
+}
+
+.addingbefore{
+    flex-direction: column;
+    padding-bottom: 0em;
+    padding: 1em;
+    overflow-wrap: break-word;
+    width: 100%;
+}
+
+.fullholder{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+#delprior{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+}
+
+#deleterdiv{
+    text-align: end;
+    background-color: white;   
+    padding: 0.7em; 
+    padding-bottom: 0.2em;
+    padding-left: 0em;
+}
+
+#updaterdiv{
+    text-align: end;
+    background-color: white;   
+    padding: 0.7em; 
+    padding-bottom: 0.2em;
+    padding-left: 0em;
+}
+
+.deleter{
+    border-radius: 5px;
+}
+
+.updater{
+    border-radius: 5px;
+}
+
+#addingnow{
+    display: flex;
+    flex-direction: row;
+    font-size: large;
+}
+
+#addingafter{
+    word-wrap: break-word;
+}
+
+.addingthena{
+    flex: 5;
+    background-color: white;
+    border-top-left-radius: 0.7em;
+    padding: 0.7em;
+    padding-bottom: 0.2em;
+}
+
+.addingthenb{
+    text-align: end;
+    background-color: white;   
+    padding: 0.7em; 
+    padding-bottom: 0.2em;
+    border-top-right-radius: 0.7em;
+    text-decoration: 3px underline black;
+}
+
+.addingthenc{
+    flex: 1;
+    text-align: center;
+    background-color: white;
+    padding: 0.7em;
+    padding-bottom: 0.2em;
+}
+
+.addingthend{
+    background-color: white;
+    border-bottom-left-radius: 0.7em;
+    border-bottom-right-radius: 0.7em;
+    padding: 0.7em;
+    padding-top: 0em;
+    font-size: medium;
+}
+
+#todo{
+    color: darkblue;
+    font-weight: bolder;
+    font-size: large;
+    padding: 0.1em;
+}
+
+#lineme{
+    padding-left: 2.5em;
+}
